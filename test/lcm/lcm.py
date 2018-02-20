@@ -1,4 +1,6 @@
 from functools import reduce
+from gcd import gcd
+
 
 
 def spread(arg):
