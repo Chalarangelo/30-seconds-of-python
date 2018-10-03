@@ -1,9 +1,11 @@
 ###string_is_digit
-```python
+```
+python
 def string_is_digit(string):
     print(string.isdigit())
 ```
-```python
+```
+python
 string=str(input("Enter string: "))
 string_is_digit(string)
 ```
