@@ -1,6 +1,6 @@
 ### quicksort
 
-Quicksort is an example of a "divide-and-conquer" algorithm, where we solve the problem
+Quicksort is an example of a "divide and conquer" algorithm, where we solve the problem
 by dividing it to smaller subproblems.
 We pick the first element of the list (although it can be a random element) as a "pivot".
 We then recursively sort two smaller problems: all elements less than or equal to the pivot,
