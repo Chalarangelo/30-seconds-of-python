@@ -2,7 +2,7 @@
 
 Function which filters out specified values from a list, returning the remaining values.
 
-Uses a list comprehension to rewrite the array without the filtered value.
+Uses a list comprehension to rewrite the array without the filtered value. argv is for allowing infinite values to be filtered.
 
 ``` python
 def without(arr, *argv):
