@@ -2,7 +2,7 @@
 
 Function which filters out specified values from a list, returning the remaining values.
 
-Uses built-in array functions in Python.
+Uses a list comprehension to rewrite the array without the filtered value.
 
 ``` python
 def without(arr, *argv):
