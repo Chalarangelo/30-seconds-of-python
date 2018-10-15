@@ -10,6 +10,16 @@ def keys_only(flat_dict):
     for k, v in flat_dict.items():
         lst.append(k)
     return lst
+    
+
+    
+    #we can use the above code or applying list function on the dictonary will do the same
+    #See the same function defined in another manner below
+    
+    
+def keys_only(flat_dict):
+    return list(flat_dict)  #This is a one liner which works the same as the above function.
+                            #Here, list() takes the keys of the dictonary as the argument by default.
 ```
 
 ``` python
