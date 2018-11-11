@@ -22,6 +22,23 @@ def deep_flatten(lst):
     return result
 ```
 
+Another flavor with `reduce()`.
+
+```python
+def combine(x, y):
+    ret = []
+    for i in [x, y]:
+        if isinstance(i, list):
+            ret.extend(i)
+        else:
+            ret.append(i)
+    return ret
+
+
+def deep_flatten(lst):
+    return reduce(combine, map(lambda x: deep_flatten(x) if type(x) == list else x, lst))
+```
+
 ```python
 deep_flatten([1, [2], [[3], 4], 5]) # [1,2,3,4,5]
 ```
