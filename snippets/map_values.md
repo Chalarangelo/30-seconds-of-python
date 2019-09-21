@@ -9,10 +9,7 @@ Use `dict.keys()` to iterate over the object's keys, assigning the values produc
 
 ```py
 def map_values(obj, fn):
-  ret = {}
-  for key in obj.keys():
-    ret[key] = fn(obj[key])
-  return ret
+    return {key: fn(obj[key]) for key in obj.keys()}
 ```
 
 ```py
