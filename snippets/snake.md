@@ -11,10 +11,9 @@ Break the string into words and combine them adding `_-_` as a separator, using 
 import re
 
 def snake(str):
-  return re.sub(r"(\s|_|-)+","_",
-    re.sub(r"[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+",
-    lambda mo: mo.group(0).lower(),str)
-  )
+  return re.sub(r"(\s|_|-)+", "_", 
+                re.sub('([a-z0-9])([A-Z])', r'\1_\2', 
+                       re.sub('(.)([A-Z][a-z]+)', r'\1_\2', str))).lower()
 ```
 
 ```py
