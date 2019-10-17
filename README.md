@@ -149,11 +149,11 @@
 
 Check if all elements in a list are equal.
 
-Use `[1:]` and `[:-1]` to compare all the values in the given list.
+Use `.count` to get the frequency of element and compare it with the length of list.
 
 ```py
 def all_equal(lst):
-  return lst[1:] == lst[:-1]
+    return lst.count(lst[-1]) == len(lst)
 ```
 
 <details>
