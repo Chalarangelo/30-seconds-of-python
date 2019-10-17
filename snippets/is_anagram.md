@@ -19,7 +19,7 @@ Counter({'a': 3, 'n': 1, 'g': 1, 'r': 1, 'm': 1})
 from collections import Counter
 def is_anagram(s1, s2):
   _str1, _str2 = s1.replace(" ", ""), s2.replace(" ", "")
-  return Counter(_str1.lower()) == Counter(_str2.lower()) #comapre both Counter objects
+  return Counter(_str1.lower()) == Counter(_str2.lower()) #compare both Counter objects
 ```
 
 ```py
