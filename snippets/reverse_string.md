@@ -14,4 +14,5 @@ def reverse_string(string):
 
 ```py
 reverse_string("snippet") #"teppins" 
+reverse_string("John 123") #"321 nhoJ" 
 ```
