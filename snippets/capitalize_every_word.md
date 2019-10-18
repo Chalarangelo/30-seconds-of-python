@@ -14,4 +14,5 @@ def capitalize_every_word(s):
 
 ```py
 capitalize_every_word('hello world!') # 'Hello World!'
+capitalize_every_word('this will be capitalized') # 'This Will Be Capitalized'
 ```
