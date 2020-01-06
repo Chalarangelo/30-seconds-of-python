@@ -5,19 +5,14 @@ tags: string,beginner
 
 Returns number of vowels in the provided string.
 
-We will store all the vowels ('A','a','E','e','I','i','O','o','U','u') in a string.
-Then pick every character from the enquired string and check whether it is in the vowel string or not.
-If the vowel is encountered then `numVowels` gets incremented.
+The `casefold()` method returns a string where all the characters are lower case.
 
 ```py
-def countVowels(string):
-    numVowels=0
-    for char in string:
-        if char in "aeiouAEIOU":
-           numVowels = numVowels+1
-    return numVowels
+def countVowels(ip):
+    ip = ip.casefold()
+    return {x:sum([1 for char in ip if char == x]) for x in 'aeiou'}
 ```
 
 ```py
-countVowels("Hello Vowels!!")  #4
+countVowels("hello World!") # {'a': 0, 'u': 0, 'o': 2, 'e': 1, 'i': 0}   
 ```
