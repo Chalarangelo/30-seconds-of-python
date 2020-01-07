@@ -3,7 +3,7 @@ title:  countVowels
 tags: string,beginner
 ---
 
-Returns number of vowels in the provided string.
+Returns count of each vowels in the provided string.
 
 The `casefold()` method returns a string where all the characters are lower case.
 
