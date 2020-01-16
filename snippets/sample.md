@@ -5,12 +5,15 @@ tags: list,random,beginner
 
 Returns a random element from a list.
 
+Use `random.choice()` to select at random an element from a list.
+
+
 
 ```py
-import random
+from random import choice
 
-def sample(lst):
-  return random.choice(lst)
+def sample(items):
+  return choice(items)
 ```
 
 ```py
