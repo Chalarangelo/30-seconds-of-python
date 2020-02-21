@@ -5,7 +5,7 @@
 | [average.md](../snippets_es/average.md)                     | [x] Translate  |
 | [average_by.md](../snippets_es/average_by.md)               | [x] Translate  |
 | bifurcate.md	                                              | [ ] Translate  |
-| bifurcate_by.md	                                          | [ ] Translate  |
+| bifurcate_by.md	                                            | [ ] Translate  |
 | byte_size.md	                                              | [ ] Translate  |
 | camel.md	                                                  | [ ] Translate  |
 | capitalize.md	                                              | [ ] Translate  |
