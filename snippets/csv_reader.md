@@ -11,8 +11,9 @@ Use `open()` to open the file and `csv.reader()` to read the file
 import csv
 
 def read_csv(filename):
-  csv_content = [row for row in csv.reader(open(filename, 'r'))]
-  return csv_content[1:]
+  with open(filename, 'r') as csv_file:
+    csv_content = [row for row in csv.reader(csv_file)]
+    return csv_content[1:]
 ```
 
 ```py
