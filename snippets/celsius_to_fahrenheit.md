@@ -1,11 +1,11 @@
 ---
-title: Celsius to Fahrenheit
+title: celsius_to_fahrenheit
 tags: conversion, beginner
 ---
 
-Converts Celsius to Fahrenheit
+Converts Celsius to Fahrenheit.
 
-Fahrenheit = (Celsius * 1.8) + 32
+fahrenheit = (celsius * 1.8) + 32
 
 ```py
 def celsius_to_fahrenheit(celsius):
