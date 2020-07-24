@@ -3,10 +3,11 @@ title: max_contiguous_sum
 tags:  list,function,math
 ---
 
-From a list find the max sum of a continous subarray
+From a list find the max sum of a continous subarray 
 
-Store the max value in a varibale end and iteratively keep adding teh array elements 
-
+Store the max value in a varibale end and iteratively keep adding the array elements 
+in another variable far , when far becomes lesser then 0 update far to be 0 again,
+when far surpasses end update end to be equal to far and return end 
 
 ```py
 def max_contiguous_sum(l):
