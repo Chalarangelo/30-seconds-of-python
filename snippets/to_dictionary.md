@@ -9,8 +9,8 @@ The values of the first list need to be unique and hashable.
 - Use `zip()` in combination with a list comprehension to combine the values of the two lists, based on their positions.
 
 ```py
-def to_dictionary(keys, values):
-  return {key:value for key, value in zip(keys, values)}
+def to_dictionary(key, values):
+    return dict(zip(key, values))
 ```
 
 ```py
