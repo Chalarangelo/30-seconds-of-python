@@ -5,7 +5,7 @@ tags: math,beginner
 
 Converts speed from KM/H to MPH.
 
-Use conversion formula of 0.6124 to convert values
+Use conversion formula of 0.6214 to convert values
 
 ```py
 
