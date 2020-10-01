@@ -1,6 +1,6 @@
 [![Logo](/logo.png)](https://30secondsofcode.org/python/p/1)
 
-## 30 seconds of Python
+## 30 seconds you can hone your skills in Python
 
 > Short Python code snippets for all your development needs
 
