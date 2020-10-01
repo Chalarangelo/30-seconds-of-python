@@ -21,4 +21,4 @@ def prime_number(number):
 
 ```py
 prime_number(21) # result
-```
+``
