@@ -5,7 +5,7 @@ tags: prime_number,intermediate
 
 Explain briefly what the snippet does.
 
-- Checks numbers from 2 to 20, If number is divisible by given numbers.
+- Checks numbers from 2 to (given number - 1), If number is divisible by given numbers.
 - Or, remainder is 0 than its a not a prime number.
 - If number is prime than return 1 and otherwise return 0. 
 
