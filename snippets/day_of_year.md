@@ -1,11 +1,13 @@
-### Suppose, we have a date in the format “YYYY-MM-DD”. We have to return the day number of the year. So if the date is “2019-02-10”, then this is 41st day of the year.
+---
+title: day_of_year
+tags: utility,beginner
+---
 
-To solve this, we will follow these steps −
-
-    * Suppose D is an array of day count like [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    * Convert the date into list of year, month and day
-    * if the year is leap year then set date D[2] = 29
-    * Add up the day count up to the month mm – 1. and day count after that.
+The snippet calculates the day of year when date is provided in"YYYY-MM-DD" format.
+ - Suppose D is an array of day count like [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+ - Convert the date into list of year, month and day
+ - If the year is leap year then set date D[2] = 29
+ - Add up the day count up to the month mm – 1. and day count after that.
     
  ```python
  def dayOfYear(date):
@@ -21,14 +23,8 @@ To solve this, we will follow these steps −
     for i in range(1, len(days)):
         # Add up the day count up to the month mm – 1. and day count after that.
         days[i] += days[i-1]
-    return days[d[1]-1]+d[2]
+    print(days[d[1]-1]+d[2])
  ```
- Calling the Function - 
  ```python
- print(dayOfYear("2020-09-30"))
- ```
- 
- Output:
- ```bash
- 274
+ dayOfYear("2020-09-30")#274
  ```
