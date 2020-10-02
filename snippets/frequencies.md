@@ -5,7 +5,8 @@ tags: list,intermediate
 
 Returns a dictionary with the unique values of a list as keys and their frequencies as the values.
 
-- Use a `for` loop to populate a dictionary, `f`, with the unique values in `lst` as keys, adding to existing keys every time the same value is encountered.
+- Use `list.count()` to get freq of each unique element.
+- Use `dict()` constructor to return dictionary with keys as unique elements of list and their freq as values.
 
 ```py
 def frequencies(lst):
