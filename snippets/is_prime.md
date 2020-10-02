@@ -9,15 +9,17 @@ Check Number is prime or not.
 - If number is not prime than return 0 and otherwise return 1. 
 
 ```py
+from math import sqrt
+
 def is_prime(number):
-  for other_numbers in range(2,number):
+  if(number % 2 == 0 and number > 2):
+    return False
+  for other_numbers in range(3,sqrt(number)+1,2):
     if(number % other_numbers == 0):
-      return 0
-      break
-  else:
-    return 1
+      return False
+  return True
 ```
 
 ```py
-is_prime(21)
+is_prime(21) #result
 ```
