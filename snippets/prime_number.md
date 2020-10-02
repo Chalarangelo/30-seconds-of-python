@@ -19,4 +19,4 @@ def is_prime(number):
 
 ```py
 is_prime(21)
-``
+```
