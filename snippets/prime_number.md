@@ -1,24 +1,22 @@
 ---
-title: prime_number
-tags: prime_number,intermediate
+title: is_prime
+tags:  math,beginner
 ---
 
-Explain briefly what the snippet does.
-
-- Checks numbers from 2 to (given number - 1), If number is divisible by given numbers.
+- Check numbers from 2 to the given number, If given number is divisible by numbers.
 - Or, remainder is 0 than its a not a prime number.
-- If number is prime than return 1 and otherwise return 0. 
+- If number is prime than print "Prime Number" and otherwise print "Not a prime number". 
 
 ```py
-def prime_number(number):
-  # code
+def is_prime(number):
   for other_numbers in range(2,number):
     if(number % other_numbers == 0):
-        return 0
-    else:
-        return 1
+        print("not a prime number")
+        break
+  else:
+    print("Prime number")
 ```
 
 ```py
-prime_number(21) # result
+is_prime(21)
 ``
