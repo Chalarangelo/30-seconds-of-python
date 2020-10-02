@@ -1,5 +1,5 @@
 ---
-title: is_prim
+title: is_prime
 tags:  math,beginner
 ---
 
