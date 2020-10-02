@@ -9,10 +9,7 @@ Returns a dictionary with the unique values of a list as keys and their frequenc
 
 ```py
 def frequencies(lst):
-  f = {}
-  for x in lst:
-    f[x] = f[x] + 1 if x in f else 1
-  return f
+  return dict((k, lst.count(k)) for k in lst)
 ```
 
 ```py
