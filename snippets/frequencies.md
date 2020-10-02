@@ -13,5 +13,6 @@ def frequencies(lst):
 ```
 
 ```py
-frequencies(['a', 'b', 'a', 'c', 'a', 'a', 'b']) # { 'a': 4, 'b': 2, 'c': 1 }
+data = ['a', 'b', 'a', 'c', 'a', 'a', 'b']
+frequencies(data) # { 'a': 4, 'b': 2, 'c': 1 }
 ```
