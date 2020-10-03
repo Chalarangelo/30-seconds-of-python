@@ -1,6 +1,6 @@
 ---
 title: day_of_year
-tags: utility,beginner
+tags: math,beginner
 ---
 
 The snippet calculates the day of year when date is provided in"YYYY-MM-DD" format.
