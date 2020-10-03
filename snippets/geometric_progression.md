@@ -1,5 +1,5 @@
 ---
-title: geometric progression
+title: geometric_progression
 tags: math,beginner
 ---
 
