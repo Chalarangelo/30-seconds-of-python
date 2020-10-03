@@ -5,8 +5,8 @@ tags: list,intermediate
 
 Returns a dictionary with the unique values of a list as keys and their frequencies as the values.
 
-- Use `list.count()` to get freq of each unique element.
-- Use `dict()` constructor to return dictionary with keys as unique elements of list and their freq as values.
+- Use `list.count()` to get the frequency of each unique element.
+- Use `dict()` constructor to return a dictionary with the unique elements of the list as keys and their frequencies as the values.
 
 ```py
 def frequencies(lst):
@@ -14,6 +14,5 @@ def frequencies(lst):
 ```
 
 ```py
-data = ['a', 'b', 'a', 'c', 'a', 'a', 'b']
-frequencies(data) # { 'a': 4, 'b': 2, 'c': 1 }
+frequencies(['a', 'b', 'a', 'c', 'a', 'a', 'b']) # { 'a': 4, 'b': 2, 'c': 1 }
 ```
