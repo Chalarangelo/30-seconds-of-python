@@ -8,7 +8,7 @@ Returns a list of numbers in the geometric progression starting with the given p
 There general form of geometric sequence is a, ar, ar<sup>2</sup>, ar<sup>3</sup>, ar<sup>4</sup>, ...
 <br> where r -> common ratio and a -> initial value
 
-- Use `range` and `list` with the appropriate start, step and end values.
+- Use `while` with the appropriate conditions to run within limits.
 
 ```py
 def geometric_progression(a, r, lim):
