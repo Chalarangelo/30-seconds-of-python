@@ -5,19 +5,16 @@ tags: string,intermediate
 
 Checks if a string is an anagram of another string (case-insensitive, ignores spaces, punctuation and special characters).
 
-- Use `isalnum()` to filter out non-alphanumeric characters, `lower()` to transform each character to lowercase.
-- Use `collections.Counter` to count the resulting characters for each string and compare the results.
-
+- Use `regex` to filter out non-alphanumeric characters, `lower()` to transform each character to lowercase.
+- Sort both strings and check if all characters are equal
 ```py
-from collections import Counter
+import re
 
 def is_anagram(s1, s2):
-  return Counter(
-    c.lower() for c in s1 if c.isalnum()
-  ) == Counter(
-    c.lower() for c in s2 if c.isalnum()
-  )
-```
+  s1 = re.sub('[\W_]+', '', s1.lower())
+  s2 = re.sub('[\W_]+', '', s2.lower())
+  return sorted(s1) == sorted(s2)
+ ```
 
 ```py
 is_anagram("#anagram", "Nag a ram!")  # True
