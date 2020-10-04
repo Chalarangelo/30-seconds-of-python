@@ -6,11 +6,12 @@ tags: math,beginner
 Returns the weighted average of two or more numbers.
 
 ```py
-def weightedAverage(X,W) : 
+def weightedAverage(A,W) : 
     sum = 0
     numWeight = 0
+    n=len(A)
     i = 0
-    while  i < len(A) : 
+    while  i < n : 
         numWeight = numWeight + A[i] * W[i] 
         sum = sum + W[i] 
         i = i + 1
