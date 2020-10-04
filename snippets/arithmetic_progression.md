@@ -8,10 +8,15 @@ Returns a list of numbers in the arithmetic progression starting with the given 
 - Use `range` and `list` with the appropriate start, step and end values.
 
 ```py
-def arithmetic_progression(n, lim):
-  return list(range(n, lim + 1, n))
+def arithmetic_progression(n, lim, d):
+  '''
+  n - first element
+  lim - upper limit
+  d - common difference
+  '''
+  return list(range(n, lim + 1, d))
 ```
 
 ```py
-arithmetic_progression(5, 25) # [5, 10, 15, 20, 25] 
+arithmetic_progression(5, 25, 4) # [5, 9, 13, 17, 21, 24] 
 ```
