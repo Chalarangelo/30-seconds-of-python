@@ -8,13 +8,13 @@ Returns a list of numbers in the arithmetic progression starting with the given 
 - Use `range` and `list` with the appropriate start, step and end values.
 
 ```py
-def arithmetic_progression(n, lim, d):
+def arithmetic_progression(first, limit, diff):
   '''
-  n - first element
-  lim - upper limit
-  d - common difference
+  first - first element
+  limit - upper limit
+  diff - common difference
   '''
-  return list(range(n, lim + 1, d))
+  return list(range(first, limit + 1, diff))
 ```
 
 ```py
