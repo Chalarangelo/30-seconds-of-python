@@ -20,5 +20,6 @@ def Rotation(array , n , isLeft):
 ```
 
 ```py
-function_name([1,2,3,4,5,6],2,True) # result
+Rotation([1,2,3,4,5,6],2,True) # Left Rotation
+Rotation([1,2,3,4,5,6],2,False) # Right Rotation
 ```
