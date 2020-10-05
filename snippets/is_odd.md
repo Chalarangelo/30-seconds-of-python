@@ -10,7 +10,10 @@ Returns `True` if the given number is odd, `False` otherwise.
 
 ```py
 def is_odd(num):
-  return num % 2 != 0
+  if num % 2 != 0:
+    return True
+  else:
+    return False
 ```
 
 ```py
