@@ -3,11 +3,9 @@ title: sum_two_arrays
 tags: Python,mat
 ---
 
-Explain briefly what the snippet does.
+Snippet to sum two arrays.
 
-- Explain briefly how the snippet works.
-- Use bullet points for your snippet's explanation.
-- Try to explain everything briefly but clearly.
+- it sum all numbers from the first array and and the second array.
 
 ```py
 def sum_two_arrays(arr1,arr2):
