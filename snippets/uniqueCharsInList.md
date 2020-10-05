@@ -15,4 +15,5 @@ def uniqueCharsInList(list):
 
 ```py
 uniqueCharsInList(['testing', 'aaaa']) # ['t', 'g', 's', 'n', 'a', 'i', 'e']
+uniqueCharsInList(['a', 'c', 'b']) # ['b', 'c', 'a']
 ```
