@@ -5,7 +5,7 @@ tags: utility,begineer
 
 Performs modular addition of 2 numbers under a given mod
 
--   Use modular addition property (a + b % c) % c = (a%c + b % c) % c
+-   Use modular addition property (a + b % c) % c = (a % c + b % c) % c
 
 ```py
 def mod_add(a,b,c):
