@@ -1,6 +1,6 @@
 ---
 title: rgb_to_hsl
-tags: math,tuple,intermediate
+tags: math,intermediate
 ---
 
 Converts RGB value to HSL (hue, saturation, lightness) value.
