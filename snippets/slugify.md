@@ -3,22 +3,22 @@ title: slugify
 tags: string,regex,intermediate
 ---
 
-Converts a string to a URL-friendly slug using regex.
+Converts a string to a URL-friendly slug.
 
-- At first `lower` and `strip` functions will normalize the input string.
-- Regex converts spaces, dashes and underscores with `-` and remove special characters.
+- Use `str.lower()` and `str.strip()` to normalize the input string.
+- Use `re.sub()` to to replace spaces, dashes and underscores with `-` and remove special characters.
 
 ```py
 import re
 
-def slugify(input_str):
-  input_str = input_str.lower().strip()
-  input_str = re.sub(r'[^\w\s-]', '', input_str)
-  input_str = re.sub(r'[\s_-]+', '-', input_str)
-  input_str = re.sub(r'^-+|-+$', '', input_str)
-  return input_str
+def slugify(s):
+  s = s.lower().strip()
+  s = re.sub(r'[^\w\s-]', '', s)
+  s = re.sub(r'[\s_-]+', '-', s)
+  s = re.sub(r'^-+|-+$', '', s)
+  return s
 ```
 
 ```py
-slugify('Hello World') # 'hello-world'
+slugify('Hello World!') # 'hello-world'
 ```
