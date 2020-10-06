@@ -23,6 +23,5 @@ def list_to_html(dataframe):
 ```py
 list1 = ["One", "Two", "Three"]
 list2 = ["David", "Jason", "Jackson""]
-list_to_html({"numbers":list1, "names":list2})
-'converted-1569.html'
+list_to_html({"numbers":list1, "names":list2}) # converted-1569.html
 ```
