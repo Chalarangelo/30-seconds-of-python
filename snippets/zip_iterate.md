@@ -1,20 +1,19 @@
 ---
-title: function_name
-tags: utility,intermediate
+title: zip_iterate
+tags: list, beginner
 ---
 
-Explain briefly what the snippet does.
+Snippet demonstrates how `zip` functions allow for iterating through multiple iterables.
 
-- Explain briefly how the snippet works.
-- Use bullet points for your snippet's explanation.
-- Try to explain everything briefly but clearly.
+- This example iterates through two lists and executes the provided `fn` for every element. 
+
 
 ```py
-def function_name(args):
-  # code
-  return 0
+def zip_iterate(list_one, list_two, fn): 
+  for (a, b) in zip(list_one, list_two): 
+  	fn(a, b)
 ```
 
 ```py
-function_name(val) # result
+zip_iterate(['a', 'b', 'c'], [1, 2, 3], print) #a 1 b 2 c 3
 ```
