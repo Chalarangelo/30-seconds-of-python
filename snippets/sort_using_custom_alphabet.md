@@ -3,7 +3,7 @@ title: sort_by_custom_alphabet
 tags: sorting,lambda,utility,intermediate
 ---
 
-Sort a list 
+Sort a list using custom alphabet.
 - It uses lambda expression to get the index of the character in specified custom alphabet.
 - Then it is passed to the `sorted` function as a key.
 
