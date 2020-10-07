@@ -13,6 +13,6 @@ def all_equal(lst):
 ```
 
 ```py
-all_equal([1, 2, 3, 4, 5, 6]) # False
-all_equal([1, 1, 1, 1]) # True
+all_equal([1, 2, 3, 4, 5, 6,7,8]) # False
+all_equal([1, 1, 1, 1,1,1]) # True
 ```
