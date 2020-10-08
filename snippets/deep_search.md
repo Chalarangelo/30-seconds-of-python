@@ -12,13 +12,13 @@ Checks the existence of a given item in a deeply nested iterable (list, tuple, s
 
 ```py
 def deep_search(iterable, item):
-	for obj in iterable:
-		if obj == item: return True
+  for obj in iterable:
+    if obj == item: return True
 
-		if isinstance(obj, Iterable):
-			if deep_search(obj, item): return True
+    if isinstance(obj, Iterable):
+      if deep_search(obj, item): return True
 
-	return False
+  return False
 ```
 
 ```py
