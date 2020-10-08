@@ -10,13 +10,13 @@ Returns the number of a substring pattern in the given string.
 
 ```python
 def count_substring(string, sub_string):
-    count = 0
-    str_length = len(string)
-    sub_length = len(sub_string)
-    for i in range(str_length):
-        if string[i:i+sub_length] == sub_string:
-            count += 1
-    return count
+  count = 0
+  str_length = len(string)
+  sub_length = len(sub_string)
+  for i in range(str_length):
+    if string[i:i+sub_length] == sub_string:
+      count += 1
+  return count
 ```
 
 ```python
