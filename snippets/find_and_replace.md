@@ -3,7 +3,7 @@ title: find_and_replace
 tags: string,beginner
 ---
 
-Finds occurences of a substring in a string and replaces them with another substring.
+Finds occurrences of a substring in a string and replaces them with another substring.
 
 - Use the String `replace()` method to find and replace the occurrences of the old substring with that of the new substring
 
