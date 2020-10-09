@@ -1,6 +1,6 @@
 ---
 title: for-else loop
-tags: loop,searchig,beginnner
+tags: loop,searching,beginnner
 ---
 
 The else clause of for-loop helps us direct the flow of code execution based on the outcome of the loop.
