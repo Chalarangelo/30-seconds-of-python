@@ -5,12 +5,11 @@ tags: list,beginner
 
 Returns the difference between two iterables.
 
-- Create a `set` from `b`, then use list comprehension on `a` to only keep values not contained in the previously created set, `_b`.
+- Use Python's set operator for difference to find all values in `a` that are not in `b`.
 
 ```py
 def difference(a, b):
-  _b = set(b)
-  return [item for item in a if item not in _b]
+  return list(set(a) - set(b))
 ```
 
 ```py
