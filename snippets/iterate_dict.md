@@ -16,5 +16,8 @@ def return_list(dictonary):
 
 ```py
 example_dict = {'Seoul':'South Korea', 'Tokyo':'Japan'} 
-return_list(example_dict) # [('Seoul', 'South Korea'), ('Tokyo', 'Japan')]
+for city, country in return_list(example_dict):
+  pass
+# [('Seoul', 'South Korea'), ('Tokyo', 'Japan')]
+
 ```
