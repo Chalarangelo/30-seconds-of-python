@@ -5,11 +5,18 @@ tags: list,beginner
 
 Returns `True` if all the values in a list are unique, `False` otherwise.
 
-- Use `set()` on the given list to remove duplicates, use `len()` to compare its length with the length of the list.
+- Use `set()` to keep track of elements seen while iterating.
+- Use `in` for checking if an element exists in the set.
+- If it exists return `False`, else return `True`.
 
 ```py
 def all_unique(lst):
-  return len(lst) == len(set(lst))
+  seen = set()
+  for val in lst:
+    if val in seen:
+      return False
+    seen.add(val)
+  return True
 ```
 
 ```py
