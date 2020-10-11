@@ -1,21 +1,20 @@
 ---
 title: hcf
-tags: loop,list,intermediate
+tags: math,list,intermediate
 ---
 
-Returns the highest common factor of two numbers.
+Returns the highest common factor of a list of numbers.
 
-- This funtion is based on the Euclidean algorithm—the H.C.F. of two numbers divides their difference as well.
-- Inside the `while` function the values `a` and `b` are swapped with `b` and and `a % b` (their difference)
-- The value of `a` when `b` (`a % b`) is zero gives the hcf
+- Applies `math.gcd` to list elements using the `functools.reduce`
 
 ```py
-def hcf(a, b):
-    while(b):
-        a, b = b, a % b
-    return a
+from functools import reduce
+from math import gcd
+
+def hcf(list):
+    return reduce(gcd, list)
 ```
 
 ```py
-hcf(21, 49) # 7
+hcf([88, 22, 77, 121]) # 11
 ```
