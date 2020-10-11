@@ -17,13 +17,17 @@ def add(x, y):
 def subtract(x, y):
   return x - y
 
-switch_case = {
-  '+': add,
-  '-': subtract,
-}
+def switch_case(case, n1, n2):
+  operation_mapping = {
+    '+': add,
+    '-': subtract,
+  }
+
+  target_func = operation_mapping.get(case, None)
+  return target_func(n1, n2) if target_func else 'No match found!'
 ```
 
 ```py
-target_func = switch_case.get('+', None)
-print(target_func(1, 2) if target_func else 'No match found!') # 3
+switch_case('+', 1, 2) # 3
+switch_case('*', 1, 2) # No match found!
 ```
