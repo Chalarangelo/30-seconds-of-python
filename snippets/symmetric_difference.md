@@ -5,12 +5,11 @@ tags: list,beginner
 
 Returns the symmetric difference between two iterables, without filtering out duplicate values.
 
-- Create a `set` from each list, then use list comprehension on each one to only keep values not contained in the previously created set of the other.
+- Use the built-in symmetric difference operator that Python sets provide.
 
 ```py
 def symmetric_difference(a, b):
-  _a, _b = set(a), set(b)
-  return [item for item in a if item not in _b] + [item for item in b if item not in _a]
+  return list(set(a) ^ set(b))
 ```
 
 ```py
