@@ -1,9 +1,7 @@
 ---
-title: function_name
+title: calc_std_drink
 tags: math,beginner
 ---
-
-Explain briefly what the snippet does.
 
 - Calculate the number of standard alcoholic drinks.
 
