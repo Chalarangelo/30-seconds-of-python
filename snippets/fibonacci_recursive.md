@@ -10,7 +10,7 @@ Returns a list of Fibonacci Sequence containing <i>n</i> numbers.
 
 
 ```py
-def main(n):
+def main(n): 
 	def fibonacci_rec(i):
 		if i < 2:
 			return i	
