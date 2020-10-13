@@ -1,6 +1,6 @@
 ---
 title: roughly_equal
-tags: utility,intermediate,math
+tags: utility,math,beginner
 ---
 
 Checks if two numbers are roughly equal to each other.
