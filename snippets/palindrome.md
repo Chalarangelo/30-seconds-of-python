@@ -1,5 +1,5 @@
 ---
-title: palindrome
+title: is_palindrome
 tags: string,intermediate
 ---
 
@@ -11,11 +11,11 @@ Returns `True` if the given string is a palindrome, `False` otherwise.
 ```py
 from re import sub
 
-def palindrome(s):
+def is_palindrome(s):
   s = sub('[\W_]', '', s.lower())
   return s == s[::-1]
 ```
 
 ```py
-palindrome('taco cat') # True
+is_palindrome('taco cat') # True
 ```
