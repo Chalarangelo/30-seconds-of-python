@@ -6,7 +6,7 @@ tags: utility, beginner
 Gives the sentence a sarcastic tone by capitalizing every second character
 
 - Itterates over the upper cased sentence, lowers every 2nd character.
-- ''.join() Joins the characters filter using the conditionals above.
+- "".join() Joins the characters filtered using the conditionals above.
 
 ```py
 def capitalize_every_second_character(string):
