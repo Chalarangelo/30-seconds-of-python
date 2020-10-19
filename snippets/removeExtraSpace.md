@@ -16,5 +16,5 @@ def removeExtraSpace(string):
 ```
 
 ```py
-print(removeExtraSpace('Python     is a    strong    programming      language')) #Python is a strong programmin language
+print(removeExtraSpace('Python     is a    strong    programming      language')) #Python is a strong programming language
 ```
