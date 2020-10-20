@@ -13,9 +13,12 @@ Chunks a list into smaller lists of a specified size.
 from math import ceil
 
 def chunk(lst, size):
-  return list(
-    map(lambda x: lst[x * size:x * size + size],
-      list(range(ceil(len(lst) / size)))))
+    chunks = []
+    index = 0
+    for i in range(ceil(len(lst)/size)):
+            chunks.append(lst[index:index+size])
+            index += size
+    return chunks
 ```
 
 ```py
