@@ -1,0 +1,27 @@
+---What is morse code? ---
+
+Morse code is a method of transmitting text information as a series of on-off tones, lights, or clicks that can be directly understood by a skilled listener or observer without special equipment. It is named for Samuel F. B. Morse, an inventor of the telegraph.
+
+
+---Morse code chart---
+
+MORSE_CODE_DICT = { 'A':'.-', 'B':'-...', 'C':'-.-.', 'D':'-..', 'E':'.', 'F':'..-.', 'G':'--.', 'H':'....', 'I':'..', 'J':'.---', 'K':'-.-', 'L':'.-..', 'M':'--', 'N':'-.', 'O':'---', 'P':'.--.', 'Q':'--.-', 'R':'.-.', 'S':'...', 'T':'-', 'U':'..-', 'V':'...-', 'W':'.--', 'X':'-..-', 'Y':'-.--', 'Z':'--..', '1':'.----', '2':'..---', '3':'...--', '4':'....-', '5':'.....', '6':'-....', '7':'--...', '8':'---..', '9':'----.', '0':'-----', ', ':'--..--', '.':'.-.-.-', '?':'..--..', '/':'-..-.', '-':'-....-', '(':'-.--.', ')':'-.--.-'}
+
+This is a morse code chart where every english upper case alphabet is associated with unique morse code.
+
+---Algorithm---
+
+The algorithm is very simple. Every character in the English language is substituted by a series of ‘dots’ and ‘dashes’ or sometimes just singular ‘dot’ or ‘dash’ and vice versa.
+
+---Explanation about the code uploaded---
+
+There are 2 functions in the uploaded document. "encrypt" and "decrypt". 
+"encrypt" function takes an English word as argument, and converts the English word into Morse-coded text, which contains only dots and dashes. 
+"decrypt" function takes an encrypted morse coded mesaage as argument and decrypts it to English word. 
+
+---Run the file "morsecode_Converter.py"---
+
+After running this file, by default it will convert "GITHUB_HACKTOBERFEST" to morse code and viceversa. 
+
+This will prompt whether you want to convert anything to morse code. By typing "Yes", you can convert any word to morse coded text. 
+Trying this out will be of great fun!!
