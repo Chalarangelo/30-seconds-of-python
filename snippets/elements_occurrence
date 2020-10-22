@@ -1,0 +1,9 @@
+Here is a different approach to count an element's occurrence in a list using list comprehension and lambda functions.
+
+## code
+
+lst = [1, 2, 3, 4, 9, 2, 2, 1, "apple", "ball", "apple"]
+
+elementToBeSearched = 2
+
+print(len(list(filter(lambda x : x == elementToBeSearched, l))))
