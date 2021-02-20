@@ -10,12 +10,12 @@ Curries a function.
 ```py
 from functools import partial
 
-def curry(fn, *args):
-  return partial(fn, *args)
+def curry(fn, *args, **kvargs):
+  return partial(fn, *args, **kvargs)
 ```
 
 ```py
-add = lambda x, y: x + y
+def add(x, y): return x + y
 add10 = curry(add, 10)
 add10(20) # 30
 ```
