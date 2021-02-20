@@ -11,7 +11,9 @@ Calculates the date of `n` days from the given date.
 ```py
 from datetime import datetime, timedelta
 
-def add_days(n, d = datetime.today()):
+def add_days(n, d=None):
+  if d is None:
+    d = datetime.today()
   return d + timedelta(n)
 ```
 
