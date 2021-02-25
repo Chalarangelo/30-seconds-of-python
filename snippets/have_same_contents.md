@@ -5,16 +5,12 @@ tags: list,intermediate
 
 Checks if two lists contain the same elements regardless of order.
 
-- Use `set()` on the combination of both lists to find the unique values.
-- Iterate over them with a `for` loop comparing the `count()` of each unique value in each list.
-- Return `False` if the counts do not match for any element, `True` otherwise.
+- Use `sorted()` to sort the lists.
+- Return `True` if their content is equal otherwise return `False`
 
 ```py
 def have_same_contents(a, b):
-  for v in set(a + b):
-    if a.count(v) != b.count(v):
-      return False
-  return True
+  return sorted(a) == sorted(b)
 ```
 
 ```py
