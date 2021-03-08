@@ -3,16 +3,17 @@ title: first_recurring_character
 tags: list,dictionary,intermediate
 ---
 
-Returns the value of the first recurring character in a list.
+Returns the value of the first repeated character in a list.
 
-- Explain briefly how the snippet works.
-- Use bullet points for your snippet's explanation.
-- Try to explain everything briefly but clearly.
+- Create an empty `dictionary`.
+- Scan each character of the input list.
+- If the character is in the `dictionary` then return the `item`.
+- else set the character equals to `True`.
 
 ```py
-def first_recurring_character(array):
+def first_recurring_character(list):
     table = {}
-    for item in array:
+    for item in list:
         if item in table:
             return item
         else:
