@@ -1,6 +1,6 @@
 ---
 title: det_matrix_objects
-tags: list,advanced,recursion
+tags: list,math,recursion,advanced
 firstSeen: 2021-07-09T17:00:00+01:00
 ---
 
