@@ -9,7 +9,6 @@ Explain briefly what the snippet does.
 - This Functions create a right angled triangle pattern of consecutive natural numbers.
 - This pattern starts with 1 on top left corner and consecutive fill till defined rows.
 
-
 ```py
 def flyod_triangle(n):
     a=0
@@ -23,7 +22,7 @@ def flyod_triangle(n):
 ```py
 flyod_triangle(3)
 # result
-1 
-2 3 
-4 5 6 
+# 1 
+# 2 3 
+# 4 5 6 
 ```
