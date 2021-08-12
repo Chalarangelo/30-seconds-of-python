@@ -24,3 +24,15 @@ def fibonacci(n):
 ```py
 fibonacci(7) # [0, 1, 1, 2, 3, 5, 8, 13]
 ```
+```py
+#Another Code For Fibonacci Using Recursion Method
+
+def recur_fibo(n):  
+   if n <= 1:  
+       return n  
+   else:  
+       return(recur_fibo(n-1) + recur_fibo(n-2))  
+
+n=int(input())
+print(recur_fibo(n))
+```
