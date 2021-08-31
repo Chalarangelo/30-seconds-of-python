@@ -14,7 +14,7 @@ Returns the ISO format of the given number of seconds.
 
 ```py
 def format_seconds(seconds: int) -> str:
-  is_negative,seconds = str(seconds)[0] == "-",abs(seconds)
+  is_negative, seconds = str(seconds)[0] == "-", abs(seconds)
   if is_negative:
     return f"-{str(seconds // 3600).zfill(2)}:{str(seconds % 3600 // 60).zfill(2)}:{str(seconds % 60).zfill(2)}"
   return f"{str(seconds // 3600).zfill(2)}:{str(seconds % 3600 // 60).zfill(2)}:{str(seconds % 60).zfill(2)}"
