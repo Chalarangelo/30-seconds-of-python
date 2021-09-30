@@ -1,10 +1,10 @@
 ---
-title: wrap_function
+title: closures
 tags: object-oriented-programming,intermediate
 firstSeen: 2021-09-30T22:38:06+0530
 ---
 
-Wraps a function to separate configuration arguments from variable arguments. Enables repeated use of the same function with same arguments without any external library like `functools`.
+Demonstrates closures to separate configuration arguments from variable arguments. Enables repeated use of the same function with same arguments without any external library like `functools`.
 
 
 ```py
