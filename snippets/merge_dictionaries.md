@@ -7,14 +7,13 @@ lastUpdated: 2020-11-02T19:28:27+02:00
 
 Merges two or more dictionaries.
 
-- Create a new `dict` and loop over `dicts`, using `dictionary.update()` to add the key-value pairs from each one to the result.
+- `ChainMap` groups multiple dicts together to create a single, updateable view. Casting the returned view to `dict` will return the merged dictionary. NOTE: the `reversed` os used to respect the order of the gived input dictionaries.
 
 ```py
+from collections import ChainMap
+
 def merge_dictionaries(*dicts):
-  res = dict()
-  for d in dicts:
-    res.update(d)
-  return res
+    return dict(ChainMap(*reversed([*dicts])))
 ```
 
 ```py
