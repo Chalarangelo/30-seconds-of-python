@@ -1,6 +1,6 @@
 ---
 title: is_strong
-tags: web,password,intermediate
+tags: web,string,intermediate
 firstSeen: 2021-10-01T13:10:00+05:30
 ---
 
