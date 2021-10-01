@@ -14,7 +14,7 @@ def deviation(list):
     mean = sum(list)/len(list) #calculates mean
     minus = [x - mean for (x, mean) in zip(list, [mean]*len(list))] #element wise substraction with mean
 
-    return  sum([i**2 for i in minus])/len(list)**(0.5) 
+    return  (sum([i**2 for i in minus])/len(list))**(0.5) 
 
 ```
 
