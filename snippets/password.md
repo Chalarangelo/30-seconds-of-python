@@ -1,7 +1,7 @@
 ---
 title: is_strong
 tags: web,password,intermediate
-firstSeen: 2021-10-01T05:00:00-04:00
+firstSeen: 2021-10-01T05:13:10+05:30
 ---
 
 This snippet checks if the password is strong or weak
