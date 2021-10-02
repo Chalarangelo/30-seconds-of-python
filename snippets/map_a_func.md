@@ -5,7 +5,7 @@ firstSeen: 2021-10-02T21:53:33+03:00
 lastUpdated: 2021-10-02T21:53:33+03:00
 ---
 
-Given a list of numbers and a fucntion as arguements, the list is transformed my mapping it into the function.
+Given any iterable and a fucntion as arguements, the iterable is transformed my mapping it into the function.
 
 - Let `func` be any other transformation function then we can call it as follows
 
