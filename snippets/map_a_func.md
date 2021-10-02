@@ -1,13 +1,13 @@
 ---
 title: Map a fuction
 tags: General,Intermediate
-firstSeen: 2021-10-02T13:57:33+03:00
-lastUpdated: 2021-10-02T19:27:07+02:00
+firstSeen: 2021-10-02T21:53:33+03:00
+lastUpdated: 2021-10-02T21:53:33+03:00
 ---
 
 Given a list of numbers and a fucntion as arguements, the list is transformed my mapping it into the function.
 
-- Let `fucn` be any other transformation function then we can call it as follows
+- Let `func` be any other transformation function then we can call it as follows
 
 ```py
 def map_a_func(array, func):
