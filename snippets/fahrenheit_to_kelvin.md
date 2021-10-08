@@ -9,7 +9,7 @@ Converts temperature from Fahrenheit to Kelvin.
 
 ```py
 def fahrenheit_to_kelvin(temp_input):
-    return ((temp_input − 32) × 5/9) + 273.15
+    return ((temp_input - 32) * 5/9) + 273.15
 ```
 
 ```py
