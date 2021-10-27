@@ -2,18 +2,16 @@
 title: map_dictionary
 tags: list,dictionary,intermediate
 firstSeen: 2020-04-07T19:53:48+03:00
-lastUpdated: 2020-11-02T19:28:27+02:00
+lastUpdated: 2021-10-26T12:28:27Z
 ---
 
 Maps the values of a list to a dictionary using a function, where the key-value pairs consist of the original value as the key and the result of the function as the value.
 
-- Use `map()` to apply `fn` to each value of the list.
-- Use `zip()` to pair original values to the values produced by `fn`.
-- Use `dict()` to return an appropriate dictionary.
+- Use dictionary comprehension to apply the function `fn` to all elements of the list and generate a dictionary.
 
 ```py
 def map_dictionary(itr, fn):
-  return dict(zip(itr, map(fn, itr)))
+  return {x:fn(x) for x in itr}
 ```
 
 ```py
